@@ -47,14 +47,6 @@ public void add(Student NewStudent){
         this.student = removeStudentArray;
     }
 
-    /*
-    * indexes   0       1           2           3
-    * array1    Ivanov  Sidorov     Stathem     Willis
-    * array2    Ivanov  Stathem
-    * */
-
-
-
     public void smartRemove(Student removeStudent) {
         StudentList newList = new StudentList();
         for (int i = 0; i < this.student.length; i++) {
@@ -64,14 +56,6 @@ public void add(Student NewStudent){
         }
         this.student = newList.student;
     }
-
-//  область_видимости возвращаемый_тип имя_метода (тип_входящего_параметр имя_входящего_параметра, ...) {}
-
-    /*
-    *  Поиск по имени
-    *  На вход: Имя
-    *  Результат выполнения: объект студент
-    * */
 
     public Student findByName(String name) {
         for (int i = 0; i < this.student.length; i++) {
